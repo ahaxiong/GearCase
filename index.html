@@ -5,6 +5,7 @@
     <title>UI 组件</title>
     <style>
         * {margin: 0; padding: 0; box-sizing: border-box;}
+
         :root {
             --button-height: 32px;
             --font-size: 14px;
@@ -15,9 +16,11 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
         #app {
             margin: 20px;
         }
+
         body {
             font-size: var(--font-size);
         }
@@ -31,28 +34,31 @@
             border: 1px solid var(--border-color);
             background: var(--button-bg);
         }
+
         .g-button:hover {
             border-color: var(--border-color-hover);
         }
+
         .g-button:active {
             background-color: var(--button-active-bg);
         }
+
         .g-button:focus {
             outline: none;
         }
     </style>
 </head>
 <body>
-    <div id="app">
-        <g-button></g-button>
-    </div>
+<div id="app">
+    <g-button></g-button>
+</div>
 
 
 <script src="node_modules/vue/dist/vue.min.js"></script>
 <script src="./button.js"></script>
 <script>
     new Vue({
-        el:'#app',
+        el: '#app',
 
     })
 </script>
